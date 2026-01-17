@@ -35,13 +35,13 @@ After this system:
 ---
 ## 🧰 Tech Stack
 
-<p align="left">
-  <img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS"/>
-  <img src="https://img.icons8.com/color/48/amazon-cloudwatch.png" alt="CloudWatch"/>
-  <img src="https://img.icons8.com/color/48/amazon-dynamodb.png" alt="DynamoDB"/>
-  <img src="https://img.icons8.com/color/48/amazon-sns.png" alt="SNS"/>
-  <img src="https://img.icons8.com/color/48/python.png" alt="Python"/>
-</p>
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
+![Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda)
+![CloudWatch](https://img.shields.io/badge/AWS-CloudWatch-orange?logo=amazoncloudwatch)
+![EventBridge](https://img.shields.io/badge/AWS-EventBridge-orange?logo=amazonaws)
+![DynamoDB](https://img.shields.io/badge/AWS-DynamoDB-blue?logo=amazondynamodb)
+![SNS](https://img.shields.io/badge/AWS-SNS-red?logo=amazonsns)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 
 ---
 🛠️ STEP-BY-STEP IMPLEMENTATION:
