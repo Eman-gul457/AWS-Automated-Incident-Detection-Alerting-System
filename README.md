@@ -15,9 +15,9 @@ Make sure that whenever something breaks, we know immediately.
 ---
 Before this system:
 ---
-•Errors happen silently ❌
-•Engineers manually check logs ❌
-•Incidents are noticed late ❌
+→Errors happen silently ❌
+→Engineers manually check logs ❌
+→Incidents are noticed late ❌
 
 After this system:
 ---
