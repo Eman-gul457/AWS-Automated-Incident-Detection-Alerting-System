@@ -21,9 +21,9 @@ Before this system:
 
 After this system:
 ---
-• Errors are detected automatically ✅
-• Incidents are saved and tracked ✅
-• Alerts are sent instantly via email ✅
+ • Errors are detected automatically ✅
+ • Incidents are saved and tracked ✅
+ • Alerts are sent instantly via email ✅
 
 ---
 
