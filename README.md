@@ -106,7 +106,8 @@ Actions:
 - Granted publish permission to Lambda
 
 --
-<img width="967" height="436" alt="sns-email-alert-redacted_dot_app" src="https://github.com/user-attachments/assets/0647f190-07fc-4d87-8fce5289650b966e" />
+<img width="967" height="436" alt="sns-email-alert png" src="https://github.com/user-attachments/assets/11bcc0cb-bc30-4209-9b48-7629dbae432f" />
+
 
 ---
 STEP 4 — Create Error Generator Lambda (Testing)
@@ -224,7 +225,8 @@ When an incident happens:
   - Recommendation
 
 ---
-<img width="1353" height="565" alt="ai-alert-email-redacted_dot_app" src="https://github.com/user-attachments/assets/f3a33097-2ee4-44ed-afdbf5b1005fa6a3"/>
+<img width="1353" height="565" alt="ai-alert-email png" src="https://github.com/user-attachments/assets/570b65a3-6151-464b-81ff-65638de20235" />
+
 
 ---
 ✅ Final Outcome
