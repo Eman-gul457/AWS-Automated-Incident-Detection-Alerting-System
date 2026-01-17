@@ -224,7 +224,7 @@ When an incident happens:
   •Recommendation
 
 ---
-<img width="1353" height="565" alt="ai-alert-email-redacted_dot_app" src="https://github.com/user-attachments/assets/7ea5d2bd-8533-428e-a0153c9deb673ef3" />
+<img width="1353" height="565" alt="ai-alert-email-redacted_dot_app" src="https://github.com/user-attachments/assets/f3a33097-2ee4-44ed-afdb-f5b1005fa6a3" />
 
 ---
 ✅ Final Outcome
