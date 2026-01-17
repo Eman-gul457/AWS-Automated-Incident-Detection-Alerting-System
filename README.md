@@ -21,13 +21,14 @@ Before this system:
 
 After this system:
 ---
-•Errors are detected automatically ✅
-•Incidents are saved and tracked ✅
-•Alerts are sent instantly via email ✅
+• Errors are detected automatically ✅
+• Incidents are saved and tracked ✅
+• Alerts are sent instantly via email ✅
 
 ---
 
 🏗️ High-Level Architecture
+
 🔁 Flow of the System
 ---
 <img width="1536" height="1024" alt="Architecture of Project" src="https://github.com/user-attachments/assets/22cfc1b9-1ce8-4b3f-b6c1-e4d7ffed9008" />
@@ -54,17 +55,17 @@ STEP 1 — Create IAM Role for Lambda
 Why?
 ---
 AWS Lambda needs permission to:
-•Write logs
-•Access DynamoDB
-•Send SNS emails
+• Write logs
+• Access DynamoDB
+• Send SNS emails
 
 Actions:
 ---
-•Created IAM Role
-•Attached policies:
-  •CloudWatchLogs
-  •DynamoDB access
-  •SNS publish
+• Created IAM Role
+• Attached policies:
+  • CloudWatchLogs
+  • DynamoDB access
+  • SNS publish
 
 ---
 <img width="1351" height="457" alt="sns-permission" src="https://github.com/user-attachments/assets/63d72c04-03f3-4c20-9c1b-8d3c07202366" />
@@ -78,14 +79,14 @@ We need to store incidents permanently.
 
 Table Details:
 ---
-  •Table name: devops-incidents
-  •Partition key: incident_id
-•Each record stores:
-  •Incident ID
-  •Time
-  •Severity
-  •Summary
-  •Recommendation
+  • Table name: devops-incidents
+  • Partition key: incident_id
+• Each record stores:
+  • Incident ID
+  • Time
+  • Severity
+  • Summary
+  • Recommendation
 
 ---
 <img width="1235" height="467" alt="dynamodb-table-created" src="https://github.com/user-attachments/assets/dd31a27b-840f-49d5-996e-8079c5f6de20" />
@@ -99,10 +100,10 @@ Engineers must receive alerts immediately.
 
 Actions:
 ---
-•Created SNS topic
-•Subscribed email address
-•Confirmed email subscription
-•Granted publish permission to Lambda
+• Created SNS topic
+• Subscribed email address
+• Confirmed email subscription
+• Granted publish permission to Lambda
 
 --
 <img width="967" height="436" alt="sns-email-alert-redacted_dot_app" src="https://github.com/user-attachments/assets/0647f190-07fc-4d87-8fce5289650b966e" />
@@ -123,9 +124,9 @@ def lambda_handler(event, context):
 ```
 What This Does:
 ---
-•Runs
-•Fails intentionally
-•Sends error to CloudWatch
+• Runs
+• Fails intentionally
+• Sends error to CloudWatch
 
 ---
 <img width="959" height="491" alt="lambda-error-code" src="https://github.com/user-attachments/assets/48812acd-66d6-48f1-8dad-d77b40d059a2" />
@@ -139,9 +140,9 @@ STEP 5 — CloudWatch Logs & Metrics
 Why?
 ---
 CloudWatch captures:
-•Error logs
-•Failure metrics
-•Execution details
+• Error logs
+• Failure metrics
+• Execution details
 This is how AWS detects something went wrong.
 
 ---
@@ -159,9 +160,9 @@ EventBridge listens for Lambda failure events and triggers automation.
 
 Rule:
 ---
-•Source: AWS Lambda
-•Event type: Function failure
-•Target: Incident Handler Lambda
+• Source: AWS Lambda
+• Event type: Function failure
+• Target: Incident Handler Lambda
 
 ---
 <img width="1334" height="485" alt="eventbridge-rule" src="https://github.com/user-attachments/assets/9d73d6b9-95a3-42a3-914e-0f6f68839108" />
@@ -174,10 +175,10 @@ This Lambda does everything automatically.
 
 Responsibilities:
 ---
-1.Receive error event
-2.Analyze severity (AI-style logic)
-3.Save incident to DynamoDB
-4.Send email alert using SNS
+1. Receive error event
+2. Analyze severity (AI-style logic)
+3. Save incident to DynamoDB
+4. Send email alert using SNS
 
 ---
 
@@ -185,9 +186,9 @@ STEP 8 — AI-Style Incident Analysis
 ---
 What “AI-style” Means Here:
 ---
-•Rule-based decision making
-•Severity classification
-•Action recommendations
+• Rule-based decision making
+• Severity classification
+• Action recommendations
 Example logic:
 ```bash
 if "Timeout" in error_type:
@@ -202,11 +203,11 @@ This is commonly used in real monitoring systems.
 STEP 9 — Save Incident to DynamoDB
 ---
 Each incident is saved with:
-•Unique ID
-•Timestamp
-•Severity
-•Summary
-•Recommendation
+• Unique ID
+• Timestamp
+• Severity
+• Summary
+• Recommendation
 
 ---
 <img width="1361" height="571" alt="dynamodb-ai-fields" src="https://github.com/user-attachments/assets/ff6ff3da-219c-482d-9a2b-b6a7281edc72" />
@@ -215,12 +216,12 @@ Each incident is saved with:
 STEP 10 — Send SNS Email Alert
 ---
 When an incident happens:
-•SNS sends an email
-•Email includes:
-  •Incident ID
-  •Severity
-  •Summary
-  •Recommendation
+• SNS sends an email
+• Email includes:
+  • Incident ID
+  • Severity
+  • Summary
+  • Recommendation
 
 ---
 <img width="1353" height="565" alt="ai-alert-email-redacted_dot_app" src="https://github.com/user-attachments/assets/f3a33097-2ee4-44ed-afdb-f5b1005fa6a3" />
@@ -228,20 +229,24 @@ When an incident happens:
 ---
 ✅ Final Outcome
 ---
-•Errors detected automatically
-•Incidents analyzed intelligently
-•Data stored securely
-•Alerts delivered instantly
-•No manual monitoring required
+• Errors detected automatically
+• Incidents analyzed intelligently
+• Data stored securely
+• Alerts delivered instantly
+• No manual monitoring required
 
 ----
 🚀 What This Project Demonstrates
 ---
-•DevOps mindset
-•Incident response automation
-•AWS monitoring skills
-•Event-driven architecture
-•Cloud troubleshooting
-•Real-world production thinking
+• DevOps mindset
+• Incident response automation
+• AWS monitoring skills
+• Event-driven architecture
+• Cloud troubleshooting
+• Real-world production thinking
+
+---
+ This project simulates a real production incident workflow used in modern DevOps and SRE teams.
+---
 
 ---
