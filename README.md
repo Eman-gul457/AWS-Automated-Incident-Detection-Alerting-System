@@ -33,16 +33,15 @@ After this system:
 <img width="1536" height="1024" alt="Architecture of Project" src="https://github.com/user-attachments/assets/22cfc1b9-1ce8-4b3f-b6c1-e4d7ffed9008" />
 
 ---
-🧰 Tools & AWS Services Used
----
-Tools/Service	  Purpose
-AWS Lambda	    Run serverless functions
-CloudWatch	    Capture logs and errors
-EventBridge	    Trigger automation on errors
-DynamoDB	      Store incident records
-SNS	            Send email alerts
-IAM	            Secure permissions
-Python	        Lambda function language
+## 🧰 Tech Stack
+
+<p align="left">
+  <img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS"/>
+  <img src="https://img.icons8.com/color/48/amazon-cloudwatch.png" alt="CloudWatch"/>
+  <img src="https://img.icons8.com/color/48/amazon-dynamodb.png" alt="DynamoDB"/>
+  <img src="https://img.icons8.com/color/48/amazon-sns.png" alt="SNS"/>
+  <img src="https://img.icons8.com/color/48/python.png" alt="Python"/>
+</p>
 
 ---
 🛠️ STEP-BY-STEP IMPLEMENTATION:
